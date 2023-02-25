@@ -1,15 +1,24 @@
 body {
-    background-image: url(/assets/images/background.jpg);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("../../assets/images/background.jpg"); 
+    font-family: 'Press Start 2P', cursive;
 }
 
-header {
+h1 {
     font-size: 30px;
-    color: bisque;
+    color: rgb(125, 239, 25);
     text-align: center;
     padding-top: 20px;
 }
-
+h1::after {
+    content: "";
+    width: 25px;
+    height: 30px;
+    background: rgb(125, 239, 25);
+    margin-bottom: 2px;
+    margin-left: 4px;
+    display: inline-block;
+    animation: cursor-blink 1s steps(2) infinite;
+}
 #cards {
     border: solid rgb(19, 21, 15) 20px;
     background-color: black;
@@ -30,7 +39,12 @@ header {
     display: flex;
     text-align: center;
     flex-direction: column;
-    color: rgb(227, 255, 126);
+    color: magenta;
     font-size: 20px;
 
 }
+@keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
