@@ -3,21 +3,49 @@ body {
     font-family: 'Press Start 2P', cursive;
 }
 
+nav {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.timer {  
+    color: rgba(27, 198, 255, 0.987);
+}
+.seconds, .score {
+    color: red;
+}
+.score {
+    margin-right: 30px;
+}
+.points {
+    color: white;
+}
 h1 {
-    font-size: 30px;
+    font-size: 50px;
     color: rgb(125, 239, 25);
     text-align: center;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 h1::after {
     content: "";
-    width: 25px;
-    height: 30px;
+    width: 30px;
+    height: 50px;
     background: rgb(125, 239, 25);
     margin-bottom: 2px;
     margin-left: 4px;
     display: inline-block;
     animation: cursor-blink 1s steps(2) infinite;
+}
+@keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+header {
+    color: yellow;
+    text-align: center;
+    padding-top: 80px;
 }
 #cards {
     border: solid rgb(19, 21, 15) 20px;
@@ -31,20 +59,25 @@ h1::after {
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
+    display: none;
 }
-
 .card {
-    height: 150px;
+    height: 100px;
+    margin-top: 50px;
     width: 100%;
     display: flex;
     text-align: center;
     flex-direction: column;
     color: magenta;
     font-size: 20px;
-
 }
-@keyframes cursor-blink {
-    0% {
-      opacity: 0;
-    }
-  }
+
+#question {
+    display: none;
+}
+#choices {
+    display: none;
+}
+#answer {
+    display: none;
+}

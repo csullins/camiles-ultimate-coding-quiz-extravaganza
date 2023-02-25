@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz!</title>
+    <title>JavaScript Quiz!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-<header><h1>QuizTime</h1></header>
+    <nav>
+        <section class="timer">Time left: <span class="seconds">30</span></section>
+        <section class="score">High Score: <span class="points">174632</span></section>
+    </nav>
+    <h1>QuizTime</h1>
+    <div class="container">
+        <header id="header">Click <span class="start">START</span> to begin</header>
     <section id="cards">
-        <card class="card">Question</card>
-        <card class="card">Choices</card>
-        <card class="card">Answer</card>
-    </section>
+        <card class="card" id="question">Question
+            <ul>
 
+            </ul>
+        </card>
+        <card class="card" id="choices">Choices</card>
+        <card class="card" id="answer">Answer</card>
+    </section>
+    </div>
     <script src="assets/js/script.js"></script> 
 </body>
 </html>
