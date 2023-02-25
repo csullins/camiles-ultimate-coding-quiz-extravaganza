@@ -1,0 +1,36 @@
+body {
+    background-image: url(/assets/images/background.jpg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    font-size: 30px;
+    color: bisque;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#cards {
+    border: solid rgb(19, 21, 15) 20px;
+    background-color: black;
+    border-radius: 30%;
+    height: 450px;
+    width: 600px;
+    align-items: center;
+    display: flex;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+.card {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: rgb(227, 255, 126);
+    font-size: 20px;
+
+}
