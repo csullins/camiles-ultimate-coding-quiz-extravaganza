@@ -11,17 +11,28 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <!-- nav bar for the timer and high score info -->
     <nav>
-        <section class="timer">Time left: <span class="seconds"></span></section>
+        <section class="timer">Time Left: <span class="seconds"></span></section>
         <section class="score">High Score: <span class="highScore"></span></section>
+        <section class="score">User:<span class="user"></span>
+        </section>
     </nav>
     <h1>QuizTime</h1>
+    <!-- this section will be visible first, then disappear -->
     <div class="container">
         <header id="header">Click <span class="start">START</span> to begin</header>
-    <section id="cards">
+        <section id="cards">
+            <!-- then, card1 and car2 will apear -->
         <card class="card1" id="question"></card>
+        <!-- the form will appear once the quiz is over-->
+        <form>
+            <label for="initials">Enter Initials to Save Score:</label>
+            <input type="text" id="initials" name="initials" maxlength="3"><br><br>      
+            <input type="submit" value="Save" onclick="submitForm(event)">
+        </form>  
         <card class="card2" id="choices"></card>
-    </section>
+        </section>
     </div>
     <!-- Added link to the jQuery library -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

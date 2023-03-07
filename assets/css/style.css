@@ -1,6 +1,7 @@
 body {
     background-image: url("../../assets/images/background.jpg"); 
     background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Press Start 2P', cursive;
 }
 
@@ -44,9 +45,9 @@ h1::after {
     }
   }
 header {
-    color: yellow;
+    color: rgb(255, 242, 0);
     text-align: center;
-    padding-top: 80px;
+    padding-top: 180px;
 }
 #cards {
     border: solid rgb(19, 21, 15) 20px;
@@ -99,7 +100,7 @@ p {
 }
 
 button {
-    color: yellow;
+    color: rgb(255, 242, 0);;
     font-family: 'Press Start 2P', cursive;
     background-color: transparent;
     border: solid rgb(0, 217, 255) 1px;;
@@ -114,12 +115,18 @@ button:hover {
     border: solid rgb(0, 255, 8) 1px;
     width: 610px;
 }
-@keyframes shake {
-    0% { margin-left: 0rem; }
-    25% { margin-left: 0.5rem; }
-    75% { margin-left: -0.5rem; }
-    100% { margin-left: 0rem; }
+
+  Form {
+    display: none;
+    color: rgb(225, 4, 191);
+    height: 100px;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
   }
-  button.shake {
-    animation: shake 0.5s infinite;
+  
+  .user {
+    color: white;
   }
