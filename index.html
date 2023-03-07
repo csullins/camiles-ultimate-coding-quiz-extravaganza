@@ -4,30 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Quiz!</title>
+    <title>Code Quiz!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <!-- nav bar for the timer and high score info -->
     <nav>
-        <section class="timer">Time left: <span class="seconds">30</span></section>
-        <section class="score">High Score: <span class="points">174632</span></section>
+        <section class="timer">Time Left: <span class="seconds"></span></section>
+        <section class="score">High Score: <span class="highScore"></span></section>
+        <section class="score">User:<span class="user"></span>
+        </section>
     </nav>
     <h1>QuizTime</h1>
+    <!-- this section will be visible first, then disappear -->
     <div class="container">
         <header id="header">Click <span class="start">START</span> to begin</header>
-    <section id="cards">
-        <card class="card" id="question">Question
-            <ul>
-
-            </ul>
-        </card>
-        <card class="card" id="choices">Choices</card>
-        <card class="card" id="answer">Answer</card>
-    </section>
+        <section id="cards">
+            <!-- then, card1 and car2 will apear -->
+        <card class="card1" id="question"></card>
+        <!-- the form will appear once the quiz is over-->
+        <form>
+            <label for="initials">Enter Initials to Save Score:</label>
+            <input type="text" id="initials" name="initials" maxlength="3"><br><br>      
+            <input type="submit" value="Save" onclick="submitForm(event)">
+        </form>  
+        <card class="card2" id="choices"></card>
+        </section>
     </div>
-    <script src="assets/js/script.js"></script> 
-</body>
+    <!-- Added link to the jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    </body>
 </html>
