@@ -2,10 +2,10 @@
 This is a simple timed quiz application built using HTML, CSS, and JavaScript.
 
 ## Getting Started
-To get started with the quiz application, simply open the index.html file in your web browser. Once you open the file, you will see the home screen with the 'START' button.
+To get started with the quiz application, simply open the index.html file in your web browser. Once you open the file, you will see the home screen with the 'START' text.
 
 ## How to Play
-- Click on the 'START' button to begin the quiz.
+- Click on 'START' to begin the quiz.
 The quiz consists of 6 multiple choice questions related to JavaScript, HTML, and CSS.
 - You have 30 seconds to answer all the questions.
 - If you answer a question incorrectly, 5 seconds will be deducted from the timer.
